@@ -22,6 +22,8 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("x", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
+vim.keymap.set("n", "<Tab>", "<C-w>w")
+
 --vim.keymap.set("n", "<C-f>", "<cmd>!tmux neww tmux-sessionizer<CR>")
 
 -- Obsidian
@@ -35,6 +37,9 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<C-p>', builtin.git_files, { desc = 'Telescope git files' })
 vim.keymap.set('n', '<leader>ps', builtin.live_grep, { desc = 'Telescope live grep' })
+
 --vim.keymap.set('n', '<leader>ps', function()
 --    builtin.grep_string({ search = vim.fn.input("Grep > ") })
 --end)
+
+
